@@ -22,8 +22,3 @@ class UPNP:
         except socket.timeout:
             pass
         return response
-
-upnp_obj = UPNP()
-response = upnp_obj.discover()
-print(response)
-
