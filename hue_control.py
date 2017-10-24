@@ -30,5 +30,4 @@ for x in response:
     parsed_json = json.loads(x)
     hue_ip=parsed_json[0]['id'], parsed_json[0]['internalipaddress']
     break
-print(hue_ip)
 print(requests.get('http://10.0.1.6/description.xml').content)
