@@ -27,7 +27,7 @@ nupnp_obj=nupnp.NUPNP()
 response=nupnp_obj.discover()
 hue_ip=[]
 for x in response:
-    parsed_json = json.loads(x)
+    parsed_json = json.loads(x.decode('utf-8'))
     hue_ip=parsed_json[0]['id'], parsed_json[0]['internalipaddress']
     break
 print(requests.get('http://10.0.1.6/description.xml').content)
