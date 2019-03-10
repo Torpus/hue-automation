@@ -8,6 +8,7 @@ name = "pypi"
 [packages]
 
 requests = "*"
+urllib3 = ">=1.23"
 
 
 [dev-packages]
